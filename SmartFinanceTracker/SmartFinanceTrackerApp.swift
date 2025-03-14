@@ -10,6 +10,7 @@ import FirebaseCore
 
 @main
 struct SmartFinanceTrackerApp: App {
+    @StateObject var authManager = AuthManager()
     // Register the AppDelegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
@@ -17,7 +18,7 @@ struct SmartFinanceTrackerApp: App {
         WindowGroup {
             NavigationView {
                 ContentView()
-            }
+            }.environmentObject(authManager)
         }
     }
 }
