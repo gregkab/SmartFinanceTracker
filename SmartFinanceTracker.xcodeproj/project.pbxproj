@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5AA252922D83B50D00874668 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AA252912D83B50D00874668 /* GoogleService-Info.plist */; };
+		5AA252952D83B6CF00874668 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5AA252942D83B6CF00874668 /* FirebaseAnalytics */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5AA252752D83B24600874668 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		5AA252642D83B24500874668 /* SmartFinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartFinanceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA252742D83B24600874668 /* SmartFinanceTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartFinanceTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA2527E2D83B24600874668 /* SmartFinanceTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartFinanceTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA252912D83B50D00874668 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA252952D83B6CF00874668 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +82,7 @@
 		5AA2525B2D83B24500874668 = {
 			isa = PBXGroup;
 			children = (
+				5AA252912D83B50D00874668 /* GoogleService-Info.plist */,
 				5AA252662D83B24500874668 /* SmartFinanceTracker */,
 				5AA252772D83B24600874668 /* SmartFinanceTrackerTests */,
 				5AA252812D83B24600874668 /* SmartFinanceTrackerUITests */,
@@ -112,6 +120,7 @@
 			);
 			name = SmartFinanceTracker;
 			packageProductDependencies = (
+				5AA252942D83B6CF00874668 /* FirebaseAnalytics */,
 			);
 			productName = SmartFinanceTracker;
 			productReference = 5AA252642D83B24500874668 /* SmartFinanceTracker.app */;
@@ -195,6 +204,9 @@
 			);
 			mainGroup = 5AA2525B2D83B24500874668;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5AA252932D83B6CF00874668 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5AA252652D83B24500874668 /* Products */;
 			projectDirPath = "";
@@ -212,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA252922D83B50D00874668 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +565,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5AA252932D83B6CF00874668 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5AA252942D83B6CF00874668 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AA252932D83B6CF00874668 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AA2525C2D83B24500874668 /* Project object */;
 }
